@@ -1,0 +1,8 @@
+.container-fluid > :first-child {
+  height: 96vh;
+  display: block;
+}
+
+.addScroll {
+  overflow-y: auto;
+}
