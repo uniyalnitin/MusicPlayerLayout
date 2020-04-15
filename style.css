@@ -1,8 +1,54 @@
 .container-fluid > :first-child {
   height: 96vh;
   display: block;
+  font-size: small;
+  color: white;
 }
 
 .addScroll {
   overflow-y: auto;
+}
+
+.sideBar {
+  background-color: #121212;
+  font-size: medium;
+}
+
+.mainPage {
+  background-color: #181818;
+}
+
+.bottomBar {
+  background-color: #282828;
+}
+
+.sideBar ul li a {
+  text-decoration: none;
+  margin: auto;
+  display: flex !important;
+  padding: 4px;
+}
+
+.sideBar ul li a:hover {
+  color: white;
+}
+
+.sideBar ul li {
+  margin: auto;
+  display: flex;
+}
+
+.sideBar ul {
+  list-style-type: none;
+  padding: 12px 0px;
+}
+
+li.active::before {
+  content: "";
+  border-left: 2px solid white;
+}
+
+.svgImage {
+  height: 20px;
+  width: 20px;
 }
