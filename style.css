@@ -3,6 +3,7 @@
   display: block;
   font-size: small;
   color: white;
+  position: relative;
 }
 
 .addScroll {
@@ -12,6 +13,7 @@
 .sideBar {
   background-color: #121212;
   font-size: medium;
+  position: relative;
 }
 
 .mainPage {
@@ -22,33 +24,65 @@
   background-color: #282828;
 }
 
-.sideBar ul li a {
+.sideBarTop ul li a {
   text-decoration: none;
   margin: auto;
   display: flex !important;
   padding: 4px;
 }
 
+.sideBar ul li a{
+  color: grey;
+}
 .sideBar ul li a:hover {
   color: white;
 }
 
 .sideBar ul li {
   margin: auto;
-  display: flex;
+  display: 0
 }
-
 .sideBar ul {
   list-style-type: none;
-  padding: 12px 0px;
-}
-
-li.active::before {
-  content: "";
-  border-left: 2px solid white;
+  padding: 2px 0px;
 }
 
 .svgImage {
   height: 20px;
   width: 20px;
+}
+
+.upperCase{
+  text-transform: uppercase;
+}
+
+.sideBarMid{
+  transition: all .3s ease-out;
+  overflow-y: scroll;
+  height: 75%;
+}
+
+.sideBarTop{
+  height: 20%;
+  line-height: 200%;
+}
+
+.sideBarTop li{
+  display: flex;
+  justify-content: center;
+  margin: 2px 10px;
+}
+.sideBarTop > li.active:first-child{
+  border-left: 2px solid white; 
+} 
+
+.fa {
+  font-size: 1.5rem !important;
+  margin-top: 0.8px;
+  line-height: 1.4rem;
+  margin-right: 0.4rem;
+}
+
+.sideBarBottom{
+  color: lightgrey;
 }
