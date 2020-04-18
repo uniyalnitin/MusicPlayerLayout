@@ -48,11 +48,12 @@
 .sideBar {
   height: 90vh;
 }
-.sideBarTop ul li a {
+.sideBarTop li a {
   text-decoration: none;
   margin: auto;
   display: flex !important;
-  padding: 4px;
+  padding: 0.1rem;
+  color: lightgrey !important;
 }
 
 .sideBarTop {
@@ -77,21 +78,21 @@
 
 .fa {
   font-size: 1.5rem !important;
-  margin-top: 0.1rem !important;
+  margin-top: 0rem !important;
   line-height: inherit !important;
   margin-right: 0.4rem;
 }
 
 .sideBarBottom {
   color: lightgrey;
-  height: ;
+  height: 6vh;
 }
 
 .bottomBar {
   background-color: #282828;
   height: 10vh;
   color: white;
-  height: 10%;
+  height: 10vh;
 }
 
 .album-cover {
@@ -120,4 +121,23 @@
 .player-controls i,
 .volume-controls i {
   font-size: 1.1rem !important;
+}
+
+.searchBar {
+  line-height: 1rem;
+  border-radius: 0.8rem;
+  padding: 0.2rem 0.2rem 0.2rem 2.2rem;
+}
+
+.searchButton {
+  padding: 0.2rem;
+  margin-left: 0;
+  padding: 0.2rem;
+  top: 1%;
+  left: 3%;
+  color: black;
+}
+
+.searchButton i {
+  font-size: 1rem !important;
 }
