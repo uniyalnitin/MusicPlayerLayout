@@ -141,3 +141,13 @@
 .searchButton i {
   font-size: 1rem !important;
 }
+
+.card {
+  background-color: transparent !important;
+  border: none !important;
+  color: #b0b0b0;
+}
+
+.card-body {
+  padding: 0.2rem;
+}
